@@ -110,55 +110,55 @@ Each time a function is called, it's placed on the **call stack**. When a recurs
 
 ```mermaid
 graph TD
-    A[Start] --> B[Input n]
-    B --> C{n <= 1?}
-    C -- Yes --> D[Return n]
-    C -- No --> E[Return n + sumUp(n-1)]
-    D --> F[Print result]
-    E --> F
-    F --> G[End]
+    A[Start] --> B[Input n];
+    B --> C{n <= 1?};
+    C -- Yes --> D[Return n];
+    C -- No --> E[Return n + sumUp(n-1)];
+    D --> F[Print result];
+    E --> F;
+    F --> G[End];
 ```
 
 #### 2\. Factorial
 
 ```mermaid
 graph TD
-    A[Start] --> B[Input n]
-    B --> C{n <= 1?}
-    C -- Yes --> D[Return 1]
-    C -- No --> E[Return n * factorial(n-1)]
-    D --> F[Print result]
-    E --> F
-    F --> G[End]
+    A[Start] --> B[Input n];
+    B --> C{n <= 1?};
+    C -- Yes --> D[Return 1];
+    C -- No --> E[Return n * factorial(n-1)];
+    D --> F[Print result];
+    E --> F;
+    F --> G[End];
 ```
 
 #### 3\. String Reversal
 
 ```mermaid
 graph TD
-    A[Start] --> B[Input string str]
-    B --> C{Is str empty or length = 1?}
-    C -- Yes --> D[Return str]
-    C -- No --> E[Reverse substring(1..n-1)]
-    E --> F[Append first char to end]
-    F --> G[Print result]
-    D --> G
-    G --> H[End]
+    A[Start] --> B[Input string str];
+    B --> C{Is str empty or length = 1?};
+    C -- Yes --> D[Return str];
+    C -- No --> E[Reverse substring(1..n-1)];
+    E --> F[Append first char to end];
+    F --> G[Print result];
+    D --> G;
+    G --> H[End];
 ```
 
 #### 4\. Number Reversal
 
 ```mermaid
 graph TD
-    A[Start] --> B[Input number n]
-    B --> C{n == 0?}
-    C -- Yes --> D[Return 0]
-    C -- No --> E[last_digit = n % 10]
-    E --> F[rev = reverse(n / 10)]
-    F --> G[reversed_number = rev*10 + last_digit]
-    G --> H[Print result]
-    D --> H
-    H --> I[End]
+    A[Start] --> B[Input number n];
+    B --> C{n == 0?};
+    C -- Yes --> D[Return 0];
+    C -- No --> E[last_digit = n % 10];
+    E --> F[rev = reverse(n / 10)];
+    F --> G[reversed_number = rev*10 + last_digit];
+    G --> H[Print result];
+    D --> H;
+    H --> I[End];
 ```
 
 -----
