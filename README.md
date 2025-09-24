@@ -1,4 +1,4 @@
-### Experiment 15: Recursion
+### 🛠️ Experiment 15: Recursion
 
 -----
 
@@ -26,21 +26,21 @@ To understand and implement **recursion** in C++ by solving problems like:
 
 The following algorithms outline the recursive approach for each problem.
 
-#### **1. Sum of N Numbers**
+#### 1\. Sum of N Numbers
 
 1.  **Function `sumUp(n)`:**
 2.  **Base Case:** If `n` is `0`, return `0`.
 3.  **Recursive Case:** Return `n + sumUp(n - 1)`.
 4.  **Main:** Read a number `num`. If `num` is negative, display an error. Otherwise, call `sumUp(num)` and print the result.
 
-#### **2. Factorial of a Number**
+#### 2\. Factorial of a Number
 
 1.  **Function `factorial(n)`:**
 2.  **Base Case:** If `n` is `0`, return `1`.
 3.  **Recursive Case:** Return `n * factorial(n - 1)`.
 4.  **Main:** Read a number `num`. If `num` is negative, display an error. Otherwise, call `factorial(num)` and print the result.
 
-#### **3. Reverse a Number**
+#### 3\. Reverse a Number
 
 1.  **Function `reverseNumber(n)`:**
 2.  **Base Case:** If `n` is `0`, return.
@@ -49,7 +49,7 @@ The following algorithms outline the recursive approach for each problem.
       * Call `reverseNumber(n / 10)` to process the rest of the number.
 4.  **Main:** Read a number, call `reverseNumber()`, and print a newline.
 
-#### **4. Reverse a String**
+#### 4\. Reverse a String
 
 1.  **Function `reverseString(str)`:**
 2.  **Base Case:** If the string is empty, return.
@@ -73,7 +73,7 @@ The following algorithms outline the recursive approach for each problem.
 
 #### **Definition**
 
-**Recursion** is a programming technique where a function calls itself, either directly or indirectly, to solve a problem. It works by breaking down a large problem into smaller, identical subproblems until a simple, easily solvable base case is reached.
+**Recursion** is a programming technique where a function calls itself, either directly or indirectly, to solve a problem. It works by breaking down a large problem into smaller, identical subproblems until a simple, easily solvable **base case** is reached.
 
 #### **Key Components of a Recursive Function**
 
@@ -106,7 +106,7 @@ Each time a function is called, it's placed on the **call stack**. When a recurs
 
 ### **Flowcharts**
 
-#### **1. Sum of N Numbers**
+#### 1\. Sum of N Numbers
 
 ```mermaid
 graph TD
@@ -119,7 +119,7 @@ graph TD
     F --> G[End]
 ```
 
-#### **2. Factorial**
+#### 2\. Factorial
 
 ```mermaid
 graph TD
@@ -132,7 +132,7 @@ graph TD
     F --> G[End]
 ```
 
-#### **3. String Reversal**
+#### 3\. String Reversal
 
 ```mermaid
 graph TD
@@ -146,7 +146,7 @@ graph TD
     G --> H[End]
 ```
 
-#### **4. Number Reversal**
+#### 4\. Number Reversal
 
 ```mermaid
 graph TD
